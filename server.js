@@ -4,7 +4,7 @@ const nodemailer = require('nodemailer');
 const dotenv = require('dotenv');
 dotenv.config();
 
-let initialPath = path.join(__dirname, "public");
+let initialPath = path.join(__dirname, "");
 let app = express();
 
 app.use(express.static(initialPath));
