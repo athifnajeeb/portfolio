@@ -1,0 +1,16 @@
+# Node modules
+node_modules/
+
+# dotenv files (DO NOT upload your credentials)
+.env
+
+# Logs
+logs/
+*.log
+
+# VS Code workspace settings
+.vscode/
+
+# OS-specific
+.DS_Store
+Thumbs.db
