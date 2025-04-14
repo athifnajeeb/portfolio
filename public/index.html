@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 class="brand">logo</h1>
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="links-container">
+            <li class="links-item"><a href="#" class="link active">home</a></li>
+            <li class="links-item"><a href="#project-section" class="link">project</a></li>
+            <li class="links-item"><a href="#about-section" class="link">about</a></li>
+            <li class="links-item"><a href="#contact-section" class="link">contact</a></li>
+        </ul>
+    </nav>
+    <!-- home section -->
+    <section class="home">
+        <div class="hero-content">
+            <h1 class="hero-heading"><span class="highlight">Hi, </span>I am Athif</h1>
+            <p class="profession">Software Developer</p>
+            <p class="info">Software Programmer | .NET Developer | Cloud Enthusiast ☁️ | Full-Stack Development |
+                Performance Optimization | Mentorship & Leadership | Building Scalable Solutions</p>
+            <a href="#contact-section" class="btn">contact</a>
+        </div>
+        <img src="images/img1.png" class="image" alt="">
+    </section>
+
+    <!-- project -->
+    <section class="project" id="project-section">
+        <h2 class="heading">Project<span class="highlight">s</span></h2>
+        <p class="sub-heading">Work in progress </p>
+        <div class="seperator"></div>
+        
+        <div class="filters">
+            <button class="filter-btn active" id="all">all</button>
+            <button class="filter-btn" id="javascript">javaScript</button>
+            <button class="filter-btn" id="ui">ui/ux</button>
+            <button class="filter-btn" id="backend">backend</button>
+            <button class="filter-btn" id="fullstack">fullStack</button>
+        </div>
+
+        <div class="project-container">
+            
+        </div>
+    </section>
+
+    <!-- about -->
+    <section class="about" id="about-section">
+        <h2 class="heading">about <span class="highlight">me</span></h2>
+        <p class="sub-heading">Lorem ipsum dolor sit amet consectetur. </p>
+        <div class="seperator"></div>
+
+        <div class="about-me-container">
+            <div class="left-col">
+                <img src="images/img.jpg" class="about-image" alt="">
+            </div>
+            <div class="right-col">
+                <p class="about-para">
+                    🚀 Turning Ideas into Scalable Tech Solutions
+
+                    With over three years of experience in .NET development, I specialize in building scalable,
+                    high-performance applications that drive business success. My expertise lies in full-stack
+                    development and performance optimization.
+
+                    At Sapience Technology, I led the development of critical .NET applications, reducing system
+                    downtime by 30% and improving workflow efficiency. I thrive in cross-functional collaborations,
+                    bridging the gap between business needs and technical execution. Beyond coding, I mentor junior
+                    developers, sharing best practices and guiding them toward clean, maintainable code.
+
+                    I am pursuing my Master of Computer Applications (MCA) at the SRM Institute of Science and
+                    Technology. I am expanding my knowledge of cloud computing and modern software architectures,
+                    preparing for my next career leap into cloud-focused software development.
+
+                    📩 Let’s connect! Feel free to reach out if you’re looking for a .NET novice passionate about
+                    building impactful solutions.
+                </p>
+                <a href="#" class="btn">download cv</a>
+            </div>
+        </div>
+        <h2 class="heading">languages and framework i know</h2>
+        <div class="seperator"></div>
+        <div class="skill-container">
+            <div class="skill-card" style="--bg: #f06529">
+                <p class="skill">HTML</p>
+            </div>
+            <div class="skill-card" style="--bg: #379ad6">
+                <p class="skill">CSS</p>
+            </div>
+            <!-- <div class="skill-card" style="--bg: #cc6699">
+                <p class="skill">SCSS</p>
+            </div> -->
+            <div class="skill-card" style="--bg: #f7df1e">
+                <p class="skill">JavaScript</p>
+            </div>
+            <div class="skill-card" style="--bg: #f6bf5e">
+                <p class="skill">JQuery</p>
+            </div>
+            <!-- <div class="skill-card large" style="--bg: #5ed9fb">
+                <p class="skill">ReactJS</p>
+            </div>
+            <div class="skill-card large" style="--bg: #83cd29">
+                <p class="skill">NodeJS</p>
+            </div> -->
+            <div class="skill-card" style="--bg: #ffa000">
+                <p class="skill">Vue</p>
+            </div>
+            <div class="skill-card" style="--bg: #326690">
+                <p class="skill">MS SQL</p>
+            </div>
+            <div class="skill-card" style="--bg: #13fcde">
+                <p class="skill">C#</p>
+            </div>
+            <div class="skill-card large" style="--bg: #5ed9fb">
+                <p class="skill">.Net core</p>
+            </div>
+            <div class="skill-card large" style="--bg: #2ab2ad">
+                <p class="skill">Entity framework</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact form -->
+<section class="contact" id="contact-section">
+    <h2 class="heading">Contact<span class="highlight"> me</span></h2>
+    <p class="sub-heading">Lorem ipsum dolor sit amet consectetur. </p>
+    <div class="seperator"></div>
+
+    <div class="contact-form">
+        <div class="name">
+            <input type="text" class="first-name" required placeholder="first name">
+            <input type="text" class="last-name" required placeholder="last name">
+        </div>
+        <input type="email" required class="email" placeholder="email">
+        <textarea class="message" placeholder="message" required></textarea>
+        <button class="btn contact-btn">contact</button>
+    </div>
+</section>
+
+<footer class="footer">made with love by modern web</footer>
+
+    <script src="project.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
