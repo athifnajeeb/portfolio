@@ -18,7 +18,7 @@ app.listen('3000', () => {
     console.log("listening.....");
 })
 
-app.post('https://portfolio-laa9.onrender.com/mail', (req, res) => {
+app.post('/mail', (req, res) => {
     const { firstname, lastname, email, msg } = req.body;
 
     const transporter = nodemailer.createTransport({
