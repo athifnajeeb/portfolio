@@ -53,22 +53,25 @@ const lastName = document.querySelector('.last-name');
 const email = document.querySelector('.email');
 const msg = document.querySelector('.message');
 
-contactBtn.addEventListener('click', () => {
+contactBtn.addEventListener('click', (e) => {
+    e.preventDefault();
     if(firstName.value.length && lastName.value.length && email.value.length && msg.value.length){
-        fetch('/mail', {
-            method: 'post',
-            headers: new Headers({'Content-Type': 'application/json'}),
-            body: JSON.stringify({
-                firstname: firstName.value,
-                lastname: lastName.value,
-                email: email.value,
-                msg: msg.value,
-            })
-        })
-        .then(res => res.json())
-        .then(data => {
-            alert(data);
-        })
+
+        var templateParams = {
+            firstname: firstName.value,
+            lastname: lastName.value,
+            email: email.value,
+            message: msg.value
+        };
+        console.log(templateParams);
+        emailjs.send('service_vv63lhc', 'template_k3lhoxn', templateParams).then(
+            (response) => {
+              console.log('SUCCESS!', response.status, response.text);
+            },
+            (error) => {
+              console.log('FAILED...', error);
+            },
+        );
     }
     else{
         alert("Some details missing!");

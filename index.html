@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="icon" href="public/images/logo.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c47d25fc3e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <nav class="navbar">
-        <h1 class="brand">logo</h1>
+        <h1 class="brand"><img src="public/images/logo.png" width="60px" alt=""></h1>
         <div class="toggle-btn">
             <span></span>
             <span></span>
@@ -39,7 +41,7 @@
         <h2 class="heading">Project<span class="highlight">s</span></h2>
         <p class="sub-heading">Work in progress </p>
         <div class="seperator"></div>
-        
+
         <div class="filters">
             <button class="filter-btn active" id="all">all</button>
             <button class="filter-btn" id="javascript">javaScript</button>
@@ -49,7 +51,7 @@
         </div>
 
         <div class="project-container">
-            
+
         </div>
     </section>
 
@@ -80,7 +82,7 @@
                     Technology. I am expanding my knowledge of cloud computing and modern software architectures,
                     preparing for my next career leap into cloud-focused software development.
 
-                    📩 Let’s connect! Feel free to reach out if you’re looking for a .NET novice passionate about
+                    📩 Let's connect! Feel free to reach out if you're looking for a .NET novice passionate about
                     building impactful solutions.
                 </p>
                 <a href="#" class="btn">download cv</a>
@@ -129,26 +131,40 @@
     </section>
 
     <!-- contact form -->
-<section class="contact" id="contact-section">
-    <h2 class="heading">Contact<span class="highlight"> me</span></h2>
-    <p class="sub-heading">Lorem ipsum dolor sit amet consectetur. </p>
-    <div class="seperator"></div>
+    <section class="contact" id="contact-section">
+        <h2 class="heading">Contact<span class="highlight"> me</span></h2>
+        <p class="sub-heading">Lorem ipsum dolor sit amet consectetur. </p>
+        <div class="seperator"></div>
 
-    <div class="contact-form">
-        <div class="name">
-            <input type="text" class="first-name" required placeholder="first name">
-            <input type="text" class="last-name" required placeholder="last name">
-        </div>
-        <input type="email" required class="email" placeholder="email">
-        <textarea class="message" placeholder="message" required></textarea>
-        <button class="btn contact-btn">contact</button>
+        <form class="contact-form" id="contact-form">
+            <div class="name">
+                <input type="text" class="first-name" required placeholder="first name">
+                <input type="text" class="last-name" required placeholder="last name">
+            </div>
+            <input type="email" required class="email" placeholder="email">
+            <textarea class="message" placeholder="message" required></textarea>
+            <button class="btn contact-btn">contact</button>
+        </form>
+    </section>
+
+    <!--screen mode button-->
+    <div class="srn-container">
+        <button class="srn-mode" id="theme-toggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </button>
     </div>
-</section>
 
-<footer class="footer">made with love by modern web</footer>
-
+    <footer class="footer">made with love by modern web</footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("QRRxgEsewSqQBLYTH");
+        })();
+    </script>
     <script src="project.js"></script>
     <script src="app.js"></script>
+    <script src="theme.js"></script>
 </body>
 
 </html>
